@@ -1,7 +1,7 @@
 
 # Roles flooder
 
-A roles flooder script for discord
+An advanced discord roles flooder
 ## Usage
 
 run ```npm install``` then ```npm start```
