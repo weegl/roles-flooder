@@ -1,15 +1,15 @@
 module.exports = {
     token: '',
     interval: 100,
-    
+
     /**
-     * L'identifiant du serveur cible
+     * The id of the target server
      * @string
      */
     guildId: '',
 
     /**
-     * L'identifiant du rôle le plus haut (le script ne modifiera pas les rôles au dessus de celui-ci)
+     * The highest role id (the script will not change the roles above it)
      * @string
      */
     highestRoleId: ''
