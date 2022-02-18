@@ -1,0 +1,16 @@
+{
+  "name": "roles-flooder",
+  "version": "1.0.0",
+  "description": "Flood guild roles until crash",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "weegl",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^13.6.0",
+    "node-fetch": "^3.2.0"
+  }
+}
