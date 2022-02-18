@@ -20,19 +20,19 @@ process.log = (input, error) => {
 const client = new Client();
 
 client.on('ready', async () => {
-    process.log(`Connecté en tant que ${client.user.tag}`);
+    process.log(`Connected has ${client.user.tag}`);
 
     const { guildId, highestRoleId, interval } = config;
 
     const guild = client.guilds.get(guildId);
     if (!guild) {
-        process.log('Impossible de trouver le serveur', true)
+        process.log('Cannot find guild ', true)
         return;
     }
 
     const highestRole = guild.roles.get(highestRoleId);
     if (!highestRole) {
-        process.log('Impossible de trouver le rôle le plus haut', true)
+        process.log('Cannot find the highest role', true)
         return;
     }
 
@@ -82,9 +82,9 @@ client.on('ready', async () => {
                     .catch(reject)
             })
         })().then(() => {
-            process.log(`J'ai modifié la position de ${mappedRoles.length} rôles`);
+            process.log(`I edited position for ${mappedRoles.length} roles`);
         }).catch(() => {
-            process.log(`Je n'ai pas pu modifier la position de ${mappedRoles.length} rôles`, true);
+            process.log(`I couldn’t change the position for ${mappedRoles.length} roles`, true);
         })
 
         await sleep(interval);
