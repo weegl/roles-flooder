@@ -20,7 +20,7 @@ process.log = (input, error) => {
 const client = new Client();
 
 client.on('ready', async () => {
-    process.log(`Connecter en tant que ${client.user.tag}`);
+    process.log(`Connecté en tant que ${client.user.tag}`);
 
     const { guildId, highestRoleId, interval } = config;
 
