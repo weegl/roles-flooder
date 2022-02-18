@@ -82,7 +82,7 @@ client.on('ready', async () => {
                     .catch(reject)
             })
         })().then(() => {
-            process.log(`J'ai modifier la position de ${mappedRoles.length} rôles`);
+            process.log(`J'ai modifié la position de ${mappedRoles.length} rôles`);
         }).catch(() => {
             process.log(`Je n'ai pas pu modifier la position de ${mappedRoles.length} rôles`, true);
         })
